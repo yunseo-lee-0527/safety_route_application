@@ -1,0 +1,57 @@
+{
+  "design": "R3",
+  "n_links": 5994,
+  "n_candidates": 146,
+  "gate": {
+    "N": 0.2,
+    "M": 0.3,
+    "note": "백분위 임계 → R 단조변환 불변, 유일 컷오프"
+  },
+  "deploy_prior": "E(통학아동 실인원) 내림차순 (취약 곱 미사용)",
+  "auc": {
+    "E": 0.521,
+    "R": 0.757,
+    "gate_lift": 3.63
+  },
+  "validation_note": "점수 미포함(held-out)·게이트 前 전 링크. R은 사고로 독립검증(게이트 위험축 타당). E는 사고와 무관(노출이라 당연).",
+  "proxy_product_fragility": {
+    "note": "프록시 곱 E×R̃ 폐기 근거. 후보 집합은 변환 불변이나 곱의 정밀순위는 R 재척도에 취약 → R3는 곱을 의사결정에 쓰지 않음. 진짜 R/ECR은 영상-EVT 측정으로 사후 정의.",
+    "spearman": {
+      "2*pct^2": 0.964,
+      "2*sqrt(pct)": 0.993,
+      "raw min-max": 0.865,
+      "log(R-min)": 0.55
+    },
+    "jaccard": {
+      "10": {
+        "2*pct^2": 1.0,
+        "2*sqrt(pct)": 1.0,
+        "raw min-max": 0.538,
+        "log(R-min)": 0.538
+      },
+      "20": {
+        "2*pct^2": 0.667,
+        "2*sqrt(pct)": 0.818,
+        "raw min-max": 0.481,
+        "log(R-min)": 0.379
+      },
+      "30": {
+        "2*pct^2": 0.875,
+        "2*sqrt(pct)": 1.0,
+        "raw min-max": 0.5,
+        "log(R-min)": 0.333
+      }
+    },
+    "aggregate": {
+      "spearman_mean": 0.843,
+      "spearman_min": 0.55,
+      "jaccard@10_mean": 0.769,
+      "jaccard@10_min": 0.538,
+      "jaccard@20_mean": 0.586,
+      "jaccard@20_min": 0.379,
+      "jaccard@30_mean": 0.677,
+      "jaccard@30_min": 0.333
+    }
+  },
+  "real_risk_design": "영상 상충 프로파일 → EVT로 단위노출당 기대 상충/사고빈도(비율척도) 측정 → 진짜 R·ECR·ΔECR·CE 산출. 근거: TCT(Hydén) · SSAM(FHWA Gettman 2008) · EVT(Tarko 2012 등). 영상 정부 전용 → 설계 단계."
+}

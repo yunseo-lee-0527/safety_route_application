@@ -1,0 +1,75 @@
+{
+  "n_edges": 7384,
+  "road_class_counts": {
+    "residential": 3409,
+    "service": 2552,
+    "secondary": 549,
+    "primary": 324,
+    "tertiary": 287,
+    "living_street": 153,
+    "primary_link": 44,
+    "secondary_link": 27,
+    "busway": 15,
+    "trunk_link": 12,
+    "tertiary_link": 7,
+    "trunk": 4,
+    "unclassified": 1
+  },
+  "candidate_features": [
+    "crosswalk_count_per_100m",
+    "traffic_signal_count_per_100m",
+    "traffic_lanes_estimated",
+    "estimated_traffic_volume",
+    "inverse_speed_risk",
+    "child_facility_count_300m_capped"
+  ],
+  "mean_abs_correlation_for_selection": 0.13948462240380052,
+  "selected_transformed_features": [
+    "crosswalk_count_per_100m_sqrt",
+    "traffic_signal_count_per_100m_sqrt",
+    "traffic_lanes_estimated_sqrt",
+    "estimated_traffic_volume_sqrt",
+    "inverse_speed_risk_sqrt"
+  ],
+  "correlations_with_target": {
+    "crosswalk_count_per_100m_sqrt": 0.18039202876380248,
+    "traffic_signal_count_per_100m_sqrt": 0.16676479278707174,
+    "traffic_lanes_estimated_sqrt": 0.14861698094531697,
+    "estimated_traffic_volume_sqrt": 0.17275217956541916,
+    "inverse_speed_risk_sqrt": -0.16187665242556828,
+    "child_facility_count_300m_capped_sqrt": 0.006505099935624659
+  },
+  "per_variable_weights": "removed - PDF chungsil sansik (Sum z_i x W)",
+  "group_correlations_for_weights": {
+    "road_6lane_or_traffic": 0.18755126317290555,
+    "child_facility": 0.003711886502488978
+  },
+  "applied_group_weights": {
+    "road_6lane_or_traffic": 1.9809999999999999,
+    "child_facility": 1.019
+  },
+  "physical_link_collapse": {
+    "before_directed_edges": 13599,
+    "after_physical_edges": 7384,
+    "collapsed_directed_edges": 6215,
+    "duplicate_physical_edge_groups": 6215
+  },
+  "length_adjustment": {
+    "density_denominator": "length_m_for_density = max(length_m, 20m); length is not an independent candidate variable",
+    "crosswalk_signal_mapping": "each crosswalk/signal point assigned to one nearest drive+service road edge within 80m",
+    "crosswalk_signal_density": "nearest-edge raw counts per 100m, clipped to 8 per 100m",
+    "facility_cap": "child facility counts within 300m clipped at positive p95"
+  },
+  "child_facility_points": 143,
+  "topis_source_counts": {
+    "road_class_default": 6195,
+    "topis_observed": 1117,
+    "osm_maxspeed_by_road_class_ratio": 72
+  },
+  "score_distribution": {
+    "mean": 0.5737955414863193,
+    "median": -0.9282886295848563,
+    "p95": 10.199454524841519,
+    "n_nan": 0
+  }
+}

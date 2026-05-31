@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# API keys / local env
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+.streamlit/cache/
+.env
+*.env
+
+# Project data / caches
+data/raw/
+data/processed/
+output/
+cache/
+
+# GIS binary/intermediate files. The app's required data files are tracked below.
+*.dbf
+*.shp
+*.shx
+*.gpkg
+!data/elementary_commuting_zone.dbf
+!data/elementary_commuting_zone.shp
+!data/elementary_commuting_zone.shx
+
+# OS/editor
+.DS_Store
+Thumbs.db
+# 환경 비밀 (실제 API 키)
+# Python 캐시
+*.pyc
+# venv

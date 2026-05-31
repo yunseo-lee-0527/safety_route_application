@@ -1,0 +1,9 @@
+# 산출 일시: 2026-05-23T18:26:08.036751
+case_D_crosswalk: 39
+case_D_crossing: 353
+case_B_shared_road: 5,690
+case_B_nearest_road: 3,074
+case_A_separated: 1,676
+case_C_no_nearby_road: 49
+special_safe_facility: 41
+unclassified: 0

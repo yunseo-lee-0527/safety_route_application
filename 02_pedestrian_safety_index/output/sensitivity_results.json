@@ -1,0 +1,288 @@
+[
+  {
+    "n_total": 10922,
+    "case_counts": {
+      "case_B_shared_road": 5690,
+      "case_B_nearest_road": 3074,
+      "case_A_separated": 1676,
+      "case_D_crossing": 353,
+      "case_C_no_nearby_road": 49,
+      "special_safe_facility": 41,
+      "case_D_crosswalk": 39
+    },
+    "score_mean": 0.4557,
+    "score_median": 0.4933,
+    "score_p25": 0.198,
+    "score_p75": 0.6962,
+    "score_p95": 0.8935,
+    "n_score_0": 1766,
+    "n_score_above_0p8": 1522,
+    "scenario": "default",
+    "overrides": {}
+  },
+  {
+    "n_total": 10922,
+    "case_counts": {
+      "case_B_shared_road": 8518,
+      "case_A_separated": 1620,
+      "case_D_crossing": 353,
+      "case_B_nearest_road": 302,
+      "case_C_no_nearby_road": 49,
+      "special_safe_facility": 41,
+      "case_D_crosswalk": 39
+    },
+    "score_mean": 0.4671,
+    "score_median": 0.5013,
+    "score_p25": 0.1936,
+    "score_p75": 0.719,
+    "score_p95": 0.9381,
+    "n_score_0": 1710,
+    "n_score_above_0p8": 1904,
+    "scenario": "B_nearest_no_discount",
+    "overrides": {
+      "B_OVERLAP_M": 80.0
+    }
+  },
+  {
+    "n_total": 10922,
+    "case_counts": {
+      "case_B_shared_road": 4789,
+      "case_B_nearest_road": 4257,
+      "case_A_separated": 1357,
+      "case_D_crossing": 353,
+      "case_C_no_nearby_road": 86,
+      "special_safe_facility": 41,
+      "case_D_crosswalk": 39
+    },
+    "score_mean": 0.4628,
+    "score_median": 0.498,
+    "score_p25": 0.2206,
+    "score_p75": 0.6956,
+    "score_p95": 0.8872,
+    "n_score_0": 1484,
+    "n_score_above_0p8": 1459,
+    "scenario": "B_nearest_tight_decay",
+    "overrides": {
+      "B_OVERLAP_M": 3.0,
+      "A_1111_MAX_SEPARATION_M": 15.0,
+      "C_NO_ROAD_M": 60.0
+    }
+  },
+  {
+    "n_total": 10922,
+    "case_counts": {
+      "case_B_shared_road": 6115,
+      "case_B_nearest_road": 2437,
+      "case_A_separated": 1888,
+      "case_D_crossing": 353,
+      "case_C_no_nearby_road": 49,
+      "special_safe_facility": 41,
+      "case_D_crosswalk": 39
+    },
+    "score_mean": 0.4534,
+    "score_median": 0.4966,
+    "score_p25": 0.1758,
+    "score_p75": 0.6979,
+    "score_p95": 0.9177,
+    "n_score_0": 1978,
+    "n_score_above_0p8": 1607,
+    "scenario": "B_nearest_loose_decay",
+    "overrides": {
+      "B_OVERLAP_M": 10.0,
+      "A_1111_MAX_SEPARATION_M": 40.0
+    }
+  },
+  {
+    "n_total": 10922,
+    "case_counts": {
+      "case_B_shared_road": 5790,
+      "case_B_nearest_road": 3162,
+      "case_A_separated": 1488,
+      "case_D_crossing": 353,
+      "case_C_no_nearby_road": 49,
+      "special_safe_facility": 41,
+      "case_D_crosswalk": 39
+    },
+    "score_mean": 0.463,
+    "score_median": 0.4984,
+    "score_p25": 0.2145,
+    "score_p75": 0.7009,
+    "score_p95": 0.895,
+    "n_score_0": 1578,
+    "n_score_above_0p8": 1550,
+    "scenario": "A1111_strict_separation",
+    "overrides": {
+      "A_1111_MAX_SEPARATION_M": 18.0
+    }
+  },
+  {
+    "n_total": 10922,
+    "case_counts": {
+      "case_B_shared_road": 5597,
+      "case_B_nearest_road": 3026,
+      "case_A_separated": 1817,
+      "case_D_crossing": 353,
+      "case_C_no_nearby_road": 49,
+      "special_safe_facility": 41,
+      "case_D_crosswalk": 39
+    },
+    "score_mean": 0.4515,
+    "score_median": 0.493,
+    "score_p25": 0.1813,
+    "score_p75": 0.694,
+    "score_p95": 0.8941,
+    "n_score_0": 1907,
+    "n_score_above_0p8": 1517,
+    "scenario": "A1111_loose_separation",
+    "overrides": {
+      "A_1111_MAX_SEPARATION_M": 35.0
+    }
+  },
+  {
+    "n_total": 10922,
+    "case_counts": {
+      "case_B_shared_road": 5718,
+      "case_B_nearest_road": 3097,
+      "case_A_separated": 1625,
+      "case_D_crossing": 353,
+      "case_C_no_nearby_road": 49,
+      "special_safe_facility": 41,
+      "case_D_crosswalk": 39
+    },
+    "score_mean": 0.4585,
+    "score_median": 0.496,
+    "score_p25": 0.2024,
+    "score_p75": 0.6992,
+    "score_p95": 0.895,
+    "n_score_0": 1715,
+    "n_score_above_0p8": 1542,
+    "scenario": "A1111_high_overlap",
+    "overrides": {
+      "A_1111_OVERLAP_RATIO": 0.7
+    }
+  },
+  {
+    "n_total": 10922,
+    "case_counts": {
+      "case_B_shared_road": 5653,
+      "case_B_nearest_road": 3063,
+      "case_A_separated": 1724,
+      "case_D_crossing": 353,
+      "case_C_no_nearby_road": 49,
+      "special_safe_facility": 41,
+      "case_D_crosswalk": 39
+    },
+    "score_mean": 0.4527,
+    "score_median": 0.4905,
+    "score_p25": 0.1916,
+    "score_p75": 0.694,
+    "score_p95": 0.8927,
+    "n_score_0": 1814,
+    "n_score_above_0p8": 1502,
+    "scenario": "A1111_low_overlap",
+    "overrides": {
+      "A_1111_OVERLAP_RATIO": 0.4
+    }
+  },
+  {
+    "n_total": 10922,
+    "case_counts": {
+      "case_B_shared_road": 5711,
+      "case_B_nearest_road": 3117,
+      "case_A_separated": 1612,
+      "case_D_crossing": 353,
+      "case_C_no_nearby_road": 49,
+      "special_safe_facility": 41,
+      "case_D_crosswalk": 39
+    },
+    "score_mean": 0.46,
+    "score_median": 0.4982,
+    "score_p25": 0.2045,
+    "score_p75": 0.7002,
+    "score_p95": 0.8957,
+    "n_score_0": 1702,
+    "n_score_above_0p8": 1556,
+    "scenario": "A1111_strict_angle",
+    "overrides": {
+      "A_1111_PARALLEL_ANGLE_DEG": 12.0
+    }
+  },
+  {
+    "n_total": 10922,
+    "case_counts": {
+      "case_B_shared_road": 5678,
+      "case_B_nearest_road": 3062,
+      "case_A_separated": 1700,
+      "case_D_crossing": 353,
+      "case_C_no_nearby_road": 49,
+      "special_safe_facility": 41,
+      "case_D_crosswalk": 39
+    },
+    "score_mean": 0.4541,
+    "score_median": 0.4919,
+    "score_p25": 0.1949,
+    "score_p75": 0.6956,
+    "score_p95": 0.8931,
+    "n_score_0": 1790,
+    "n_score_above_0p8": 1511,
+    "scenario": "A1111_loose_angle",
+    "overrides": {
+      "A_1111_PARALLEL_ANGLE_DEG": 30.0
+    }
+  },
+  {
+    "n_total": 10922,
+    "case_counts": {
+      "case_B_shared_road": 4759,
+      "case_B_nearest_road": 4183,
+      "case_A_separated": 1461,
+      "case_D_crossing": 353,
+      "case_C_no_nearby_road": 86,
+      "special_safe_facility": 41,
+      "case_D_crosswalk": 39
+    },
+    "score_mean": 0.4595,
+    "score_median": 0.4949,
+    "score_p25": 0.2111,
+    "score_p75": 0.6963,
+    "score_p95": 0.889,
+    "n_score_0": 1588,
+    "n_score_above_0p8": 1475,
+    "scenario": "combined_tight_all",
+    "overrides": {
+      "B_OVERLAP_M": 3.0,
+      "A_1111_MAX_SEPARATION_M": 18.0,
+      "C_NO_ROAD_M": 60.0,
+      "A_1111_PARALLEL_ANGLE_DEG": 15.0,
+      "A_1111_OVERLAP_RATIO": 0.65
+    }
+  },
+  {
+    "n_total": 10922,
+    "case_counts": {
+      "case_B_shared_road": 5858,
+      "case_B_nearest_road": 2710,
+      "case_A_separated": 1872,
+      "case_D_crossing": 353,
+      "special_safe_facility": 41,
+      "case_D_crosswalk": 39,
+      "case_C_no_nearby_road": 32,
+      "unclassified": 17
+    },
+    "score_mean": 0.4509,
+    "score_median": 0.4915,
+    "score_p25": 0.1798,
+    "score_p75": 0.6945,
+    "score_p95": 0.902,
+    "n_score_0": 1945,
+    "n_score_above_0p8": 1545,
+    "scenario": "combined_loose_all",
+    "overrides": {
+      "B_OVERLAP_M": 7.0,
+      "A_1111_MAX_SEPARATION_M": 35.0,
+      "C_NO_ROAD_M": 100.0,
+      "A_1111_PARALLEL_ANGLE_DEG": 25.0,
+      "A_1111_OVERLAP_RATIO": 0.45
+    }
+  }
+]

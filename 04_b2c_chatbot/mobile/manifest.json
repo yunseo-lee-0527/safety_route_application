@@ -1,0 +1,19 @@
+{
+  "name": "관악 안전통학",
+  "short_name": "안전통학",
+  "description": "관악구 어린이 맞춤형 안전 통학로 안내",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#185FA5",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "ko"
+}

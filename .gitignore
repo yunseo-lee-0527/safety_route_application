@@ -1,0 +1,36 @@
+# 환경 비밀
+**/.streamlit/secrets.toml
+**/secrets.toml
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 가상환경
+venv/
+.venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# 로그
+*.log
+
+# 빌드/임시
+build/
+dist/
+*.egg-info/
+.checkpoints/
+
+# 백업 (필요 시 git에서는 추적 안 함)
+_backup_*/
