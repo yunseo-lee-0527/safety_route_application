@@ -1,0 +1,20 @@
+# Root requirements — union of both Streamlit apps so Streamlit Community Cloud
+# resolves dependencies regardless of whether it reads root or the app subdir.
+#   - 05_b2g_dashboard/dashboard.py
+#   - 04_b2c_chatbot/streamlit_app/app.py
+streamlit>=1.35
+streamlit-folium>=0.20
+streamlit-js-eval>=1.0.0
+folium>=0.16
+branca>=0.7.0
+geopandas>=0.14
+pyogrio>=0.7
+pyproj>=3.6.0
+shapely>=2.0.0
+networkx>=3.0
+numpy>=1.24.0
+pandas>=2.0
+scipy>=1.10.0
+google-genai>=1.0.0
+tomli>=2.0.0; python_version < "3.11"
+reportlab>=4.0
