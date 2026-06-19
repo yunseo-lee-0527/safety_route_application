@@ -12,7 +12,7 @@ import pandas as pd
 import streamlit as st
 from streamlit_folium import st_folium
 
-DATA = Path("data")
+DATA = Path(__file__).resolve().parent / "data"
 
 st.set_page_config(
     page_title="어린이보호구역 우선검토",
